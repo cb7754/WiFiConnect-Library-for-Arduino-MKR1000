@@ -6,16 +6,29 @@ How To Use:
 2) Include in your sketch: #include "WiFiConnect.h"
 3) declare WiFiConnect wifi(your_ssid, your_passwd)
 4) then in setup() do: 
-<code>
-if (!wifi.connected) {
-  Serial.println("Connection Fail!");
+
+`if (!wifi.connected) {`
+
+    Serial.println("Connection Fail!");
+  
     while (true) {}
-}
-else {
-  Serial.println("Connected!");
-}
-</code>
+    
+`}`
+
+`else {`
+
+    Serial.println("Connected!");
+  
+`}`
+
+
+
 wifi.ip() returns a IPAddress with the local IP
+
 wifi.mac() returns the MAC Address
+
 wifi.rssi() returns the signal strenght
+
+wifi.connect is true when connected
+
 See example.
