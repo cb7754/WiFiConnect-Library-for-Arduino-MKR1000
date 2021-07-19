@@ -25,7 +25,8 @@ How To Use:
 
 wifi.ip() returns a IPAddress with the local IP
 
-wifi.mac() returns the MAC Address
+byte mac[6]
+wifi.mac(mac) returns the MAC Address in mac array
 
 wifi.rssi() returns the signal strenght
 
